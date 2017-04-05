@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa98f980_e6a29899",
+        "filename": "python-sushy.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 78
+      },
+      "writtenOn": "2017-04-05T12:28:39Z",
+      "side": 1,
+      "message": "I suspect you need python2-six and python2-requests here, as it\u0027s our python2 package.",
+      "range": {
+        "startLine": 32,
+        "startChar": 0,
+        "endLine": 33,
+        "endChar": 25
+      },
+      "revId": "e3e9d5cddbee7741e8ab18742d839a794022228a",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
