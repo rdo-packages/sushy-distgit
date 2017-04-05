@@ -2,6 +2,40 @@
   "comments": [
     {
       "key": {
+        "uuid": "fa98f980_667948fc",
+        "filename": "python-sushy.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2017-04-05T14:21:57Z",
+      "side": 1,
+      "message": "Please use python-* for requirements/build requirements instead of python2-*. python2-devel is the only exception, it should stay as is.",
+      "revId": "9695fa73e51e519c1a5dd3ca2071f0cb8e87bec8",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa98f980_867e2ce3",
+        "filename": "python-sushy.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2017-04-05T14:21:57Z",
+      "side": 1,
+      "message": "The -tests subpackage should require all test-requirements, otherwise it would fail to run when installed.",
+      "revId": "9695fa73e51e519c1a5dd3ca2071f0cb8e87bec8",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fa98f980_c6b594ce",
         "filename": "python-sushy.spec",
         "patchSetId": 2
