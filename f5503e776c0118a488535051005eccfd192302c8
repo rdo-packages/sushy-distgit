@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa98f980_144986d0",
+        "filename": "python-sushy.spec",
+        "patchSetId": 5
+      },
+      "lineNbr": 126,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2017-04-07T10:36:11Z",
+      "side": 1,
+      "message": "This directory is not being included in any package. If it\u0027s not required, just remove this line, if /var/log/sushy is needed, add it to the files list or the package.",
+      "range": {
+        "startLine": 126,
+        "startChar": 0,
+        "endLine": 126,
+        "endChar": 60
+      },
+      "revId": "f5503e776c0118a488535051005eccfd192302c8",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
