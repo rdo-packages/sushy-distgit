@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa98f980_74bbb2c4",
+        "filename": "python-sushy.spec",
+        "patchSetId": 3
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2017-04-07T09:50:44Z",
+      "side": 1,
+      "message": "nit: We may want to remove the URL in the summary, it is already in the description.",
+      "revId": "e5bbc65e6e548d68ec38942f4759e501b382213e",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa98f980_54b6aedd",
+        "filename": "python-sushy.spec",
+        "patchSetId": 3
+      },
+      "lineNbr": 115,
+      "author": {
+        "id": 113
+      },
+      "writtenOn": "2017-04-07T09:50:44Z",
+      "side": 1,
+      "message": "This should be doc/html/.{doctrees,buildinfo}",
+      "revId": "e5bbc65e6e548d68ec38942f4759e501b382213e",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
