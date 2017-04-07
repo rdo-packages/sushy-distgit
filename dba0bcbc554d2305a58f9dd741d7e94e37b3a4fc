@@ -16,6 +16,24 @@
       "revId": "dba0bcbc554d2305a58f9dd741d7e94e37b3a4fc",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa98f980_b4035a72",
+        "filename": "python-sushy.spec",
+        "patchSetId": 4
+      },
+      "lineNbr": 115,
+      "author": {
+        "id": 309
+      },
+      "writtenOn": "2017-04-07T10:18:00Z",
+      "side": 1,
+      "message": "No worries, my bad! I should have looked too",
+      "parentUuid": "fa98f980_d4d0def9",
+      "revId": "dba0bcbc554d2305a58f9dd741d7e94e37b3a4fc",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
