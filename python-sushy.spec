@@ -27,6 +27,9 @@ Summary: Sushy is a Python library to communicate with Redfish based systems
 BuildRequires: python2-devel
 BuildRequires: python-pbr
 BuildRequires: python-setuptools
+# For running unit tests during check phase
+BuildRequires: python-requests
+BuildRequires: python-six
 
 Requires: python-pbr >= 2.0.0
 Requires: python-six >= 1.9.0
@@ -61,6 +64,9 @@ Summary: Sushy is a Python library to communicate with Redfish based systems
 BuildRequires: python3-devel
 BuildRequires: python3-pbr
 BuildRequires: python3-setuptools
+# For running unit tests during check phase
+BuildRequires: python3-requests
+BuildRequires: python3-six
 
 Requires: python3-pbr >= 2.0.0
 Requires: python3-six >= 1.9.0
@@ -113,6 +119,12 @@ rm -f *requirements.txt
 %{__python2} setup.py build_sphinx
 # remove the sphinx-build leftovers
 rm -rf doc/build/html/.{doctrees,buildinfo}
+
+%check
+%{__python2} setup.py test
+%if 0%{?with_python3}
+%{__python3} setup.py test
+%endif # with_python3
 
 %install
 %py2_install
