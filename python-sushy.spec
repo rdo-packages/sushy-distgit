@@ -132,11 +132,6 @@ rm -rf doc/build/html/.{doctrees,buildinfo}
 %py3_install
 %endif # with_python3
 
-# Setup directories
-install -d -m 755 %{buildroot}%{_datadir}/%{sname}
-install -d -m 755 %{buildroot}%{_sharedstatedir}/%{sname}
-install -d -m 755 %{buildroot}%{_localstatedir}/log/%{sname}
-
 %files -n python2-%{sname}
 %license LICENSE
 %{python2_sitelib}/%{sname}
