@@ -163,3 +163,4 @@ rm -rf doc/build/html/.{doctrees,buildinfo}
 %changelog
 * Mon Mar 20 2017 Lucas Alvares Gomes <lucasagomes@gmail.com> 0.1.0-1
 - Initial package.
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/sushy/commit/?id=48c8cb9fcd1f058297d08396cc9b38d85c58bad7
