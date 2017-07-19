@@ -98,7 +98,7 @@ Tests for Sushy
 Summary: Sushy documentation
 
 BuildRequires: python-sphinx
-BuildRequires: python-oslo-sphinx
+BuildRequires: python-openstackdocstheme
 
 %description -n python-%{sname}-doc
 Documentation for Sushy
