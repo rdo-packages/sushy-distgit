@@ -162,5 +162,3 @@ rm -rf doc/build/html/.{doctrees,buildinfo}
 %doc doc/build/html README.rst
 
 %changelog
-* Mon Mar 20 2017 Lucas Alvares Gomes <lucasagomes@gmail.com> 0.1.0-1
-- Initial package.
