@@ -7,7 +7,7 @@
 %endif
 
 Name: python-%{sname}
-Version: 1.0.0
+Version: 1.1.0
 Release: 1%{?dist}
 Summary: Sushy is a Python library to communicate with Redfish based systems
 License: ASL 2.0
@@ -162,6 +162,9 @@ rm -rf doc/build/html/.{doctrees,buildinfo}
 %doc doc/build/html README.rst
 
 %changelog
+* Wed Sep 06 2017 rdo-trunk <javier.pena@redhat.com> 1.1.0-1
+- Update to 1.1.0
+
 * Mon Aug 14 2017 Alfredo Moralejo <amoralej@redhat.com> 1.0.0-1
 - Update to 1.0.0
 
