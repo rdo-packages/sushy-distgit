@@ -124,6 +124,7 @@ rm -rf doc/build/html/.{doctrees,buildinfo}
 %check
 %{__python2} setup.py test
 %if 0%{?with_python3}
+rm -rf .testrepository
 %{__python3} setup.py test
 %endif # with_python3
 
