@@ -6,6 +6,11 @@
 %global with_python3 1
 %endif
 
+%global common_desc \
+Sushy is a Python library to communicate with Redfish based systems (http://redfish.dmtf.org)
+
+%global common_desc_tests Tests for Sushy
+
 Name: python-%{sname}
 Version: XXX
 Release: XXX
@@ -18,7 +23,7 @@ Source0: http://tarballs.openstack.org/%{sname}/%{sname}-%{upstream_version}.tar
 BuildArch: noarch
 
 %description
-Sushy is a Python library to communicate with Redfish based systems (http://redfish.dmtf.org)
+%{common_desc}
 
 %package -n python2-%{sname}
 Summary: Sushy is a Python library to communicate with Redfish based systems
@@ -37,7 +42,7 @@ Requires: python-six >= 1.9.0
 Requires: python-requests
 
 %description -n python2-%{sname}
-Sushy is a Python library to communicate with Redfish based systems (http://redfish.dmtf.org)
+%{common_desc}
 
 %package -n python2-%{sname}-tests
 Summary: Sushy tests
@@ -54,7 +59,7 @@ Requires: python-testscenarios
 Requires: python-testtools
 
 %description -n python2-%{sname}-tests
-Tests for Sushy
+%{common_desc_tests}
 
 %if 0%{?with_python3}
 
@@ -74,7 +79,7 @@ Requires: python3-six >= 1.9.0
 Requires: python3-requests
 
 %description -n python3-%{sname}
-Sushy is a Python library to communicate with Redfish based systems (http://redfish.dmtf.org)
+%{common_desc}
 
 %package -n python3-%{sname}-tests
 Summary: Sushy tests
@@ -91,7 +96,7 @@ Requires: python3-testscenarios
 Requires: python3-testtools
 
 %description -n python3-%{sname}-tests
-Tests for Sushy
+%{common_desc_tests}
 
 %endif # with_python3
 
