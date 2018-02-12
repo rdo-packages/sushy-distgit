@@ -31,15 +31,15 @@ Summary: Sushy is a Python library to communicate with Redfish based systems
 
 BuildRequires: git
 BuildRequires: python2-devel
-BuildRequires: python-pbr
-BuildRequires: python-setuptools
+BuildRequires: python2-pbr
+BuildRequires: python2-setuptools
 # For running unit tests during check phase
-BuildRequires: python-requests
-BuildRequires: python-six
+BuildRequires: python2-requests
+BuildRequires: python2-six
 
-Requires: python-pbr >= 2.0.0
-Requires: python-six >= 1.9.0
-Requires: python-requests
+Requires: python2-pbr >= 2.0.0
+Requires: python2-six >= 1.10.0
+Requires: python2-requests >= 2.14.2
 
 %description -n python2-%{sname}
 %{common_desc}
@@ -48,15 +48,15 @@ Requires: python-requests
 Summary: Sushy tests
 Requires: python2-%{sname} = %{version}-%{release}
 
-BuildRequires: python-oslotest
-BuildRequires: python-testrepository
-BuildRequires: python-testscenarios
-BuildRequires: python-testtools
+BuildRequires: python2-oslotest
+BuildRequires: python2-testrepository
+BuildRequires: python2-testscenarios
+BuildRequires: python2-testtools
 
-Requires: python-oslotest
-Requires: python-testrepository
-Requires: python-testscenarios
-Requires: python-testtools
+Requires: python2-oslotest
+Requires: python2-testrepository
+Requires: python2-testscenarios
+Requires: python2-testtools
 
 %description -n python2-%{sname}-tests
 %{common_desc_tests}
@@ -75,8 +75,8 @@ BuildRequires: python3-requests
 BuildRequires: python3-six
 
 Requires: python3-pbr >= 2.0.0
-Requires: python3-six >= 1.9.0
-Requires: python3-requests
+Requires: python3-six >= 1.10.0
+Requires: python3-requests >= 2.14.2
 
 %description -n python3-%{sname}
 %{common_desc}
