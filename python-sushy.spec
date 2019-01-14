@@ -11,6 +11,7 @@
 # End of macros for py2/py3 compatibility
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
+%global with_doc 1
 %global sname sushy
 
 %global common_desc \
@@ -68,6 +69,7 @@ Requires: python%{pyver}-testtools
 %description -n python%{pyver}-%{sname}-tests
 %{common_desc_tests}
 
+%if 0%{?with_doc}
 %package -n python-%{sname}-doc
 Summary: Sushy documentation
 
@@ -76,6 +78,7 @@ BuildRequires: python%{pyver}-openstackdocstheme
 
 %description -n python-%{sname}-doc
 Documentation for Sushy
+%endif
 
 %prep
 %autosetup -n %{sname}-%{upstream_version} -S git
@@ -86,10 +89,12 @@ rm -f *requirements.txt
 %build
 %{pyver_build}
 
+%if 0%{?with_doc}
 # generate html docs
 %{pyver_bin} setup.py build_sphinx
 # remove the sphinx-build-%{pyver} leftovers
 rm -rf doc/build/html/.{doctrees,buildinfo}
+%endif
 
 %check
 %{pyver_bin} setup.py test
@@ -107,8 +112,10 @@ rm -rf doc/build/html/.{doctrees,buildinfo}
 %license LICENSE
 %{pyver_sitelib}/%{sname}/tests
 
+%if 0%{?with_doc}
 %files -n python-%{sname}-doc
 %license LICENSE
 %doc doc/build/html README.rst
+%endif
 
 %changelog
