@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0cde4efb_28dd3464",
+        "filename": "python-sushy.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 78
+      },
+      "writtenOn": "2019-03-05T12:04:30Z",
+      "side": 1,
+      "message": "should be added here as well for unit tests to pass",
+      "revId": "31ca5545e9a8ba8408924f1d7aa5af837f922354",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
