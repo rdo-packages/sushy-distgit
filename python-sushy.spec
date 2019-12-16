@@ -123,3 +123,4 @@ rm -rf doc/build/html/.{doctrees,buildinfo}
 %endif
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/sushy/commit/?id=a54dfea55e245be91910f20bfd78f87b6d419468
