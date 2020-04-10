@@ -43,12 +43,10 @@ BuildRequires: python%{pyver}-pbr
 BuildRequires: python%{pyver}-setuptools
 # For running unit tests during check phase
 BuildRequires: python%{pyver}-requests
-BuildRequires: python%{pyver}-six
 BuildRequires: python%{pyver}-dateutil
 BuildRequires: python%{pyver}-stevedore
 
 Requires: python%{pyver}-pbr >= 2.0.0
-Requires: python%{pyver}-six >= 1.10.0
 Requires: python%{pyver}-requests >= 2.14.2
 Requires: python%{pyver}-dateutil
 Requires: python%{pyver}-stevedore >= 1.29.0
