@@ -43,12 +43,10 @@ BuildRequires: python%{pyver}-pbr
 BuildRequires: python%{pyver}-setuptools
 # For running unit tests during check phase
 BuildRequires: python%{pyver}-requests
-BuildRequires: python%{pyver}-six
 BuildRequires: python%{pyver}-dateutil
 BuildRequires: python%{pyver}-stevedore
 
 Requires: python%{pyver}-pbr >= 2.0.0
-Requires: python%{pyver}-six >= 1.10.0
 Requires: python%{pyver}-requests >= 2.14.2
 Requires: python%{pyver}-dateutil
 Requires: python%{pyver}-stevedore >= 1.29.0
@@ -78,6 +76,7 @@ Requires: python%{pyver}-testtools
 Summary: Sushy documentation
 
 BuildRequires: python%{pyver}-sphinx
+BuildRequires: python%{pyver}-sphinxcontrib-apidoc
 BuildRequires: python%{pyver}-openstackdocstheme
 
 %description -n python-%{sname}-doc
@@ -95,7 +94,7 @@ rm -f *requirements.txt
 
 %if 0%{?with_doc}
 # generate html docs
-%{pyver_bin} setup.py build_sphinx
+sphinx-build-%{pyver} -W -b html doc/source doc/build/html
 # remove the sphinx-build-%{pyver} leftovers
 rm -rf doc/build/html/.{doctrees,buildinfo}
 %endif
