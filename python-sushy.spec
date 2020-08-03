@@ -35,9 +35,9 @@ BuildRequires: python3-requests
 BuildRequires: python3-dateutil
 BuildRequires: python3-stevedore
 
+Requires: python3-dateutil >= 2.7.0
 Requires: python3-pbr >= 2.0.0
 Requires: python3-requests >= 2.14.2
-Requires: python3-dateutil
 Requires: python3-stevedore >= 1.29.0
 
 %description -n python3-%{sname}
