@@ -1,3 +1,5 @@
+%{!?sources_gpg: %{!?dlrn:%global sources_gpg 1} }
+%global sources_gpg_sign 0x2426b928085a020d8a90d0d879ab7008d0896c8a
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 %global with_doc 1
@@ -10,14 +12,25 @@ Sushy is a Python library to communicate with Redfish based systems (http://redf
 
 Name: python-%{sname}
 Version: 3.4.1
-Release: 1%{?dist}
+Release: 2%{?dist}
 Summary: Sushy is a Python library to communicate with Redfish based systems
 License: ASL 2.0
 URL: http://launchpad.net/%{sname}/
 
 Source0: http://tarballs.openstack.org/%{sname}/%{sname}-%{upstream_version}.tar.gz
+# Required for tarball sources verification
+%if 0%{?sources_gpg} == 1
+Source101:        http://tarballs.openstack.org/%{sname}/%{sname}-%{upstream_version}.tar.gz.asc
+Source102:        https://releases.openstack.org/_static/%{sources_gpg_sign}.txt
+%endif
 
 BuildArch: noarch
+
+# Required for tarball sources verification
+%if 0%{?sources_gpg} == 1
+BuildRequires:  /usr/bin/gpgv2
+BuildRequires:  openstack-macros
+%endif
 
 %description
 %{common_desc}
@@ -73,6 +86,10 @@ Documentation for Sushy
 %endif
 
 %prep
+# Required for tarball sources verification
+%if 0%{?sources_gpg} == 1
+%{gpgverify}  --keyring=%{SOURCE102} --signature=%{SOURCE101} --data=%{SOURCE0}
+%endif
 %autosetup -n %{sname}-%{upstream_version} -S git
 
 # Let's handle dependencies ourseleves
@@ -111,6 +128,9 @@ rm -rf doc/build/html/.{doctrees,buildinfo}
 %endif
 
 %changelog
+* Wed Oct 21 2020 Joel Capitao <jcapitao@redhat.com> 3.4.1-2
+- Enable sources tarball validation using GPG signature.
+
 * Fri Sep 25 2020 RDO <dev@lists.rdoproject.org> 3.4.1-1
 - Update to 3.4.1
 
