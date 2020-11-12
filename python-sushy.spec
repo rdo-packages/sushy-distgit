@@ -39,7 +39,7 @@ BuildRequires:  openstack-macros
 Summary: Sushy is a Python library to communicate with Redfish based systems
 %{?python_provide:%python_provide python3-%{sname}}
 
-BuildRequires: git
+BuildRequires: git-core
 BuildRequires: python3-devel
 BuildRequires: python3-pbr
 BuildRequires: python3-setuptools
