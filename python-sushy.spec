@@ -61,14 +61,10 @@ Summary: Sushy tests
 Requires: python3-%{sname} = %{version}-%{release}
 
 BuildRequires: python3-oslotest
-BuildRequires: python3-testrepository
-BuildRequires: python3-testscenarios
-BuildRequires: python3-testtools
+BuildRequires: python3-stestr
 
 Requires: python3-oslotest
-Requires: python3-testrepository
-Requires: python3-testscenarios
-Requires: python3-testtools
+Requires: python3-stestr
 
 %description -n python3-%{sname}-tests
 %{common_desc_tests}
