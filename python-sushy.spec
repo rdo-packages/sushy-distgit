@@ -11,7 +11,7 @@ Sushy is a Python library to communicate with Redfish based systems (http://redf
 %global common_desc_tests Tests for Sushy
 
 Name: python-%{sname}
-Version: 4.3.2
+Version: 4.3.3
 Release: 1%{?dist}
 Summary: Sushy is a Python library to communicate with Redfish based systems
 License: ASL 2.0
@@ -128,6 +128,9 @@ rm -rf doc/build/html/.{doctrees,buildinfo}
 %endif
 
 %changelog
+* Mon May 15 2023 RDO <dev@lists.rdoproject.org> 4.3.3-1
+- Update to 4.3.3
+
 * Fri Nov 18 2022 RDO <dev@lists.rdoproject.org> 4.3.2-1
 - Update to 4.3.2
 
