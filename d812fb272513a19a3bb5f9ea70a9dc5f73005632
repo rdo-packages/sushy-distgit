@@ -16,6 +16,24 @@
       "message": "good to have newline above",
       "revId": "d812fb272513a19a3bb5f9ea70a9dc5f73005632",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "839aa956_8ac29e7e",
+        "filename": "python-sushy.spec",
+        "patchSetId": 4
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2023-06-27T12:43:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "997208d5_e47e4389",
+      "revId": "d812fb272513a19a3bb5f9ea70a9dc5f73005632",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
